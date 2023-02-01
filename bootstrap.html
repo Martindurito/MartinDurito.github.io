@@ -1,0 +1,121 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale-1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <title>
+            bootstrap
+        </title>
+        <script language="javascript">
+           
+            function borrarTexto()
+            {
+                document.getElementById('cajaTexto').value="";
+                document.getElementById('cajaTexto').focus();
+            }
+ 
+            function hacerMensaje()
+            {
+                var textoDeLaCaja;
+                textoDeLaCaja=document.getElementById('cajaTexto').value;
+                alert("hola ... \n \n "+textoDeLaCaja);
+               
+                
+ 
+                var respuesta=confirm("¿te gusta la musica de slipknot entra aqui!? .. ");
+                if(respuesta)
+                   window.open("https://www.youtube.com/watch?v=mi7L2RV8_7Q",'_blank');
+                
+                borrarTexto(); 
+            }
+         </script>
+    </head>
+    <body>
+       
+        <div class="panel panel.default">
+            <div class="panel-body">
+                <center>
+                   <div style="margin:5%;width:90%;">
+                      
+                      <div class="alert alert-info" style="width:40%">
+                        <b>bootstrap </b> 
+                    </div>
+
+                     <br>
+
+                     <div class="row">
+                        
+                        <div class="col-sm-7" style="background-color:white;text-align:center;">
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2" style="text-align:right;">
+                                     
+                               </div>
+                               <div class="col-sm-2" style="text-align:center;">
+                                 <center> nombre? </center>
+                                </div>
+                               <div class="col-sm-8" style="text-align:center;">
+                                <input type="text" id="cajaTexto"
+                                class="form-control"
+                                style="width:95%;height:90%;text-align:center;"
+                                placeholder="escribe aquí tu nombre"
+                                onDblClick="borrarTexto()"/>
+                            </div>
+                           </div> 
+                            <br>
+                           <div class="row">
+                            <div class="col-sm-6" style="text-align:center;">
+                                <input type="button" id="botonMensaje" 
+                                       class="btn btn-primary" 
+                                       value="click aquí...  para mensaje"
+                                       style="width:95%;height:90%;text-align:center;"
+                                       onClick="hacerMensaje()" />
+                           </div>
+                           <div class="col-sm-6" style="text-align:center;">
+                               <input type="button" id="botonBorrar" 
+                                      class="btn btn-info"
+                                      value="click aquí...  para borrar texto"
+                                      style="width:95%;height:90%;text-align:center;"
+                                      onClick="borrarTexto()" />
+                           </div>
+                           </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="messi.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">MESSI</h5>
+                                <p class="card-text">Lionel Andrés Messi Cuccittini, conocido como Leo Messi, es un futbolista argentino que juega como delantero o
+                                centrocampista. Jugador histórico del Fútbol Club Barcelona, al que estuvo ligado veinte años, desde 2021 integra el
+                                plantel del Paris Saint-Germain de la Ligue 1 de Francia.</p>
+                                <a href="https://www.sport.es/es/personajes/barca/messi/" class="btn btn-primary">informacion completa</a>
+                            </div>
+                        </div>
+
+                           
+                            
+                            <a href="https://www.youtube.com/watch?v=twOMe6o1eLU" target="_blank"
+                               onClick="return confirm('¿Estas seguro?..');">
+                                 Click aquí para ver jugadas de messi  
+                            </a>
+                            
+                       </div>
+                       <div class="col-sm-5">
+                        CODIGO DEL EJEMPLO <br>
+                        <iframe name="marco" 
+                                class="embed-responsive-item"
+                                src="bootstrap01.txt"
+                                width="100%" height="100%"
+                                style="border:0px solid white">
+
+
+                            </iframe>
+                   </div>
+                     </div>
+                   </div> 
+                </center>
+            </div>
+        </div>
+    </body>
+</html>
