@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title> LOGIN </title>    
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
+        <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="login.css">
+                
+        <script src="credenciales.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="contenedor">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Bienvenido
+                    </div>
+                    <form>
+                        <input id="user_text" type="text" name="usuario" placeholder="Usuario" required>
+                        
+                        <input id="password_text" type="password" placeholder="Contraseña" name="password" required>
+                        
+                        <input type="button" class="submit" title="Ingresar" name="Ingresar" onclick="verificar()" value="Ingresar">
+                        
+                    </form>
+                    <div class="pie-form">
+                        <a href="#">¿Perdiste tu contraseña?</a> 
+                        <a href="#">¿No tienes Cuenta? Registrate</a>
+                    </div>
+                </div>
+                <div class="inferior">
+                    <a href="#">Volver</a>
+                </div>
+            </div>
+        </div>
+            
+    </body>
+</html>
